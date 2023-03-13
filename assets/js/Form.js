@@ -25,11 +25,12 @@ const renderList = () => {
   listReference.innerHTML = "";
   animals.forEach((type) => {
     const newLi = document.createElement("li");
-    newLi.innerText = `Nome animale: ${type.petName} Nome Proprietario: ${type.ownerName} Specie:${type.species} Razza:${type.breed}`;
+    newLi.innerHTML = `<span style="color: red"> Nome animale:</span> ${type.petName}; <span style="color: red"> Nome Proprietario:</span> ${type.ownerName};<span style="color: red">  Specie:</span> ${type.species};<span style="color: red">  Razza:</span> ${type.breed}`;
     listReference.appendChild(newLi);
   });
 };
 
+// COLLEGAMENTO A HTML
 addBtnReference.addEventListener("click", () => {
   let newPets = new Pet(
     nameInputReference.value,
