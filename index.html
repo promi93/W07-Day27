@@ -8,8 +8,43 @@
     <title>Form Pets</title>
 </head>
 
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4em;
+    }
 
-<body style="display: flex;flex-direction: column; justify-content: center; align-items: center; margin-top: 4em; ">
+    h1 {
+        text-shadow: 4px 4px 8px rgb(141, 97, 97);
+    }
+
+    p {
+        color: blueviolet;
+        border-bottom: 1px solid yellow;
+        padding: 1em;
+    }
+
+    input {
+        border-radius: 20px;
+    }
+
+    #add {
+        margin-top: 20px;
+        border-radius: 20px;
+        padding: 1em;
+        background-color: red;
+        color: white;
+        border: none;
+    }
+</style>
+
+<body>
 
     <h1>Pets Form</h1>
 
@@ -25,7 +60,7 @@
     <p>Breed</p>
     <input placeholder="Insert name" id="breed-field">
 
-    <button style="margin-top: 20px;" id="add">Aggiungi</button>
+    <button id="add">Add</button>
 
     <h1>List:</h1>
     <ul id="list"></ul>
